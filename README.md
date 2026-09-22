@@ -1,29 +1,29 @@
-# 🚗 RAAHI v2.1
+#  RAAHI v2.1
 ## Resilient Offline Navigation & Emergency Network
 
 > **NAVIGATE • PROTECT • CONNECT**
 
 RAAHI is an **offline-first navigation and emergency resilience platform** designed to help users continue navigation and prepare emergency communication when internet connectivity is weak, unavailable, or intermittent.
 
-## 🌟 Features
+##  Features
 
-- 🗺️ From / Destination search
-- 🔎 Nominatim geocoding
-- 🚗 OSRM real driving routes
-- 🔀 Route alternatives
-- 📍 Current-location support
-- 🖱️ Map-click location selection
-- 📏 Distance and ETA
-- 📦 Safety Pack
-- 📡 Offline-first navigation
-- 🏥 Nearby safety locations
-- 🚨 Emergency Mode
-- 🎙️ Offline voice-message queue
-- 🔄 Synchronization when connectivity returns
-- 🔗 Connect / Relay prototype
-- 📱 Responsive mobile, tablet and desktop UI
+- From / Destination search
+- Nominatim geocoding
+- OSRM real driving routes
+- Route alternatives
+- Current-location support
+- Map-click location selection
+- Distance and ETA
+- Safety Pack
+-  Offline-first navigation
+-  Nearby safety locations
+-  Emergency Mode
+-  Offline voice-message queue
+-  Synchronization when connectivity returns
+-  Connect / Relay prototype
+-  Responsive mobile, tablet and desktop UI
 
-## 🌐 Mapping Technology
+##  Mapping Technology
 
 RAAHI does **not** use the Google Maps SDK.
 
@@ -35,7 +35,7 @@ RAAHI does **not** use the Google Maps SDK.
 | Nominatim | Geocoding |
 | OSRM | Driving routes |
 
-## 📦 Safety Pack
+##  Safety Pack
 
 Before entering an area with poor connectivity, users can prepare a Safety Pack containing locally available navigation and safety information.
 
@@ -53,7 +53,7 @@ Disable Internet
 Continue Using Cached Data
 ```
 
-## 📡 Offline Mode
+##  Offline Mode
 
 RAAHI follows an **offline-first architecture**.
 
@@ -68,24 +68,24 @@ When connectivity is unavailable:
 
 Fresh geocoding and fresh online route requests normally require internet unless the required information is already cached.
 
-## 🏥 Nearby Safety
+##  Nearby Safety
 
 RAAHI provides access to safety-related locations such as:
 
-- 🏥 Hospitals
-- 👮 Police stations
-- ⛽ Fuel stations
-- 📍 Other configured safety locations
+-  Hospitals
+-  Police stations
+-  Fuel stations
+-  Other configured safety locations
 
-## 🚨 Emergency Mode
+##  Emergency Mode
 
 Emergency information can include:
 
-- 📍 Current or last-known location
-- 🕐 Timestamp
-- 🧭 Journey context
-- 🚨 Emergency category
-- 🎙️ Voice message
+-  Current or last-known location
+-  Timestamp
+-  Journey context
+-  Emergency category
+-  Voice message
 
 ```text
 Emergency Triggered
@@ -103,11 +103,11 @@ Synchronize
 SYNCED
 ```
 
-## 🎙️ Voice Messages
+##  Voice Messages
 
 Voice messages can be recorded using browser media capabilities. When offline, they can be stored locally and marked as pending.
 
-## 🔗 Connect & Relay
+##  Connect & Relay
 
 RAAHI includes a Connect concept for nearby-user communication when conventional internet connectivity is unavailable.
 
@@ -117,7 +117,7 @@ User A → Nearby User B → Relay → User C → Internet → RAAHI Server
 
 > **Technical limitation:** True phone-to-phone Bluetooth mesh networking cannot be guaranteed using ordinary browser APIs. The current Connect / Relay functionality should therefore be treated as a prototype or simulation.
 
-## 💾 Offline-First Storage
+##  Offline-First Storage
 
 Potential locally stored information includes:
 
@@ -131,7 +131,7 @@ Potential locally stored information includes:
 - Synchronization queue
 - Offline status
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 ### Frontend
 - React
@@ -157,7 +157,7 @@ Potential locally stored information includes:
 - Geolocation API
 - MediaRecorder API
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 RAAHI/
@@ -174,7 +174,7 @@ RAAHI/
 └── .gitignore
 ```
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -220,7 +220,7 @@ Vite normally runs at:
 http://localhost:5173
 ```
 
-## 🧭 Navigation Workflow
+##  Navigation Workflow
 
 1. Start the backend.
 2. Start the frontend.
@@ -238,7 +238,7 @@ http://localhost:5173
 14. Disable internet.
 15. Verify **OFFLINE MODE** and cached information.
 
-## 🧪 Offline Demo
+##  Offline Demo
 
 ```text
 Internet Available
@@ -274,31 +274,31 @@ Synchronize
 SYNCED
 ```
 
-## 📸 Screenshots
+##  Screenshots
 
 > Put your screenshots inside the `screenshots/` folder in the project root.
 
 
-### 🗺️ Navigation
+###  Navigation
 
 ![Navigation](screenshots\Screenshot 2026-09-22 184650.png)
 
 
-### 📦 Safety Pack
+### Safety Pack
 
 ![Safety Pack](screenshots\Screenshot 2026-09-22 184823.png)
 
-### 📡 Offline Mode
+###  Offline Mode
 
 ![Offline Mode](screenshots\Screenshot 2026-09-22 184848.png)
 
-### 🚨 Emergency Mode
+### Emergency Mode
 
 ![Emergency Mode](screenshots\Screenshot 2026-09-22 184901.png)
 
 > **Important:** Use relative paths such as `screenshots/home.png`, not `C:\Users\...` paths.
 
-## 🏷️ Data Status
+##  Data Status
 
 | Status | Meaning |
 |---|---|
@@ -309,7 +309,7 @@ SYNCED
 | 🟡 **PENDING SYNC** | Waiting for synchronization |
 | ⚪ **LAST UPDATED** | Latest known update time |
 
-## 🧯 Failure Handling
+##  Failure Handling
 
 ### Internet Lost
 ```text
@@ -336,7 +336,7 @@ Upload Failed → Store Locally → Retry Later
 Relay Unavailable → Keep Information Locally → Retry
 ```
 
-## 🔐 Security & Privacy
+##  Security & Privacy
 
 - Password hashing
 - Authenticated backend requests
@@ -349,7 +349,7 @@ Relay Unavailable → Keep Information Locally → Retry
 - Server-side authorization
 - HTTPS for production deployment
 
-## ⚠️ Technical Limitations
+##  Technical Limitations
 
 - Fresh geocoding and online route calculation normally require internet.
 - Offline routing depends on locally available routing/network data.
@@ -358,7 +358,7 @@ Relay Unavailable → Keep Information Locally → Retry
 - Connect / Relay is currently a prototype or simulation.
 - `PENDING SYNC` does not mean an emergency message was delivered; successful synchronization must be confirmed.
 
-## 🌍 Real Geographic Data
+##  Real Geographic Data
 
 RAAHI is designed to use real geographic and open mapping data.
 
@@ -372,7 +372,7 @@ The project does not intentionally use:
 
 Mapping technologies include OpenStreetMap, Nominatim and OSRM.
 
-## 📊 System Architecture
+##  System Architecture
 
 ```text
                          RAAHI
@@ -390,7 +390,7 @@ Mapping technologies include OpenStreetMap, Nominatim and OSRM.
                     Offline Experience
 ```
 
-## 📋 Implementation Status
+## Implementation Status
 
 ### Mapping
 - [x] From location search
@@ -428,18 +428,18 @@ Mapping technologies include OpenStreetMap, Nominatim and OSRM.
 - [ ] Production deployment infrastructure
 - [ ] Comprehensive automated testing
 
-## 🔮 Future Enhancements
+##  Future Enhancements
 
-- 📱 Native Android/iOS application
-- 🗺️ Advanced offline routing graphs
-- 🔗 Native peer-to-peer communication
-- 🔄 Background synchronization
-- 🏥 Expanded safety POI datasets
-- 🔐 Stronger end-to-end security
-- 🧪 Comprehensive automated testing
-- ☁️ Production deployment infrastructure
+-  Native Android/iOS application
+-  Advanced offline routing graphs
+-  Native peer-to-peer communication
+-  Background synchronization
+-  Expanded safety POI datasets
+-  Stronger end-to-end security
+-  Comprehensive automated testing
+-  Production deployment infrastructure
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Map Is Blank
 
@@ -477,7 +477,7 @@ npm install
 npm run dev
 ```
 
-## 🤝 Contributing
+##  Contributing
 
 ```bash
 git clone <repository-url>
@@ -490,18 +490,18 @@ git push origin feature/your-feature
 
 Then create a Pull Request on GitHub.
 
-## 📜 License
+##  License
 
 This project should use the license required by the project or institution. For an open-source release, an MIT License may be used if appropriate.
 
-## 👩‍💻 Project Information
+##  Project Information
 
 ### RAAHI v2.1
 **Resilient Offline Navigation & Emergency Network**
 
 **React • TypeScript • Vite • FastAPI • Python • Leaflet • OpenStreetMap • Nominatim • OSRM • IndexedDB • PWA**
 
-## 🌟 Project Vision
+##  Project Vision
 
 > **Navigation and emergency preparedness should not completely depend on continuous internet connectivity.**
 
@@ -509,7 +509,7 @@ RAAHI combines real geographic data, local caching, offline-first design, emerge
 
 ---
 
-# 🚗 RAAHI
+#  RAAHI
 
 ### Navigate when connected. Stay prepared when disconnected.
 
